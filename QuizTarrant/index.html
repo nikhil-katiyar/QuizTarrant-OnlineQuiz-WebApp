@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quizerr</title>
+    <title>QuizTarrant - Home</title>
     <link href="./css/index.css" rel="stylesheet" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
@@ -12,10 +12,10 @@
       integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous"
     />
-  </head> 
+  </head>
   <body class="bg-info">
     <header class="index-header">
-      <h1>QuizTarrant - Home</h1>
+      <h1>QuizTarrant</h1>
     </header>
 
     <main class="index-main">
@@ -24,11 +24,15 @@
           <div class="form-group row">
             <label
               for="input"
-              class="form-control-sm col-form-label col-sm-3 col-lg-2 offset-sm-2"
+              class="
+                form-control-sm
+                col-form-label col-sm-3 col-lg-2
+                offset-sm-2
+              "
             >
               No. of questions?
             </label>
-            <div class="col-sm-6 ">
+            <div class="col-sm-6">
               <input
                 type="number"
                 min="5"
@@ -44,46 +48,54 @@
           <div class="form-group row">
             <label
               for="input"
-              class="form-control-sm col-form-label col-sm-3 col-lg-2 offset-sm-2"
+              class="
+                form-control-sm
+                col-form-label col-sm-3 col-lg-2
+                offset-sm-2
+              "
             >
               Category?
             </label>
             <div class="col-sm-6">
-              <select class="form-select form-select-sm">
-                <option selected>General Knowledge</option>
-                <option>Books</option>
-                <option>Films</option>
-                <option>Music</option>
-                <option>Musicals and Theaters</option>
-                <option>Television</option>
-                <option>Video Games</option>
-                <option>Science and Nature</option>
-                <option>Computers</option>
-                <option>Mathematics</option>
-                <option>Sports</option>
-                <option>Geography</option>
-                <option>History</option>
-                <option>Politics</option>
-                <option>Art</option>
-                <option>Celebrities</option>
-                <option>Animals</option>
-                <option>Vehicles</option>
-                <option>Cartoon and Animation</option>
+              <select class="form-select form-select-sm" id="subject">
+                <option value="GN" selected>General Knowledge</option>
+                <option value="books">Books</option>
+                <option value="films">Films</option>
+                <option value="music">Music</option>
+                <option value="MT">Musicals and Theaters</option>
+                <option value="tele">Television</option>
+                <option value="games">Video Games</option>
+                <option value="science">Science and Nature</option>
+                <option value="computers">Computers</option>
+                <option value="maths">Mathematics</option>
+                <option value="sports">Sports</option>
+                <option value="geography">Geography</option>
+                <option value="history">History</option>
+                <option value="politics">Politics</option>
+                <option value="art">Art</option>
+                <option value="celebs">Celebrities</option>
+                <option value="animals">Animals</option>
+                <option value="vehicles">Vehicles</option>
+                <option value="CA">Cartoon and Animation</option>
               </select>
             </div>
           </div>
           <div class="form-group row">
             <label
               for="input"
-              class="form-control-sm col-form-label col-sm-3 col-lg-2 offset-sm-2"
+              class="
+                form-control-sm
+                col-form-label col-sm-3 col-lg-2
+                offset-sm-2
+              "
             >
               Difficulty?
             </label>
             <div class="col-sm-6">
-              <select class="form-select form-select-sm">
-                <option selected>Easy</option>
-                <option>Medium</option>
-                <option>Hard</option>
+              <select class="form-select form-select-sm" id="difficulty">
+                <option value="1" selected>Easy</option>
+                <option value="2">Medium</option>
+                <option value="3">Hard</option>
               </select>
             </div>
           </div>
