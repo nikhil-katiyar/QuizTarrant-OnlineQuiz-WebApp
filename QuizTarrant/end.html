@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuizTarrant</title>
+    <link href="./css/end.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <h1 class="col-12 d-flex justify-content-center">
+            Congratulations!!
+          </h1>
+          <h2 class="col-12 d-flex justify-content-center">
+            You have completed the Quiz
+          </h2>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <h3 class="col-12 d-flex justify-content-center">Final Score</h3>
+          <p id="final-score"></p>
+          <h3 class="col-12 d-flex justify-content-center">Percentage</h3>
+          <p id="percent"></p>
+          <div class="bg-dark col-6 offset-3" id="progressBar">
+            <div id="progressBarFull"></div>
+          </div>
+        </div>
+      </div>
+       <div class="button">
+        <a id="submit-btn"><button class="btn-hover-effect">GOTO HOME</button></a>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/end.js"></script>
+  </body>
+</html>

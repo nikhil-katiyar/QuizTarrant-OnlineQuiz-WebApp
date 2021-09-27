@@ -1,0 +1,33 @@
+#progressBar {
+  height: 15px;
+  border-radius: 8px;
+}
+
+#progressBarFull {
+  height: 15px;
+  background-color: #2d89da;
+  border-radius: 8px;
+  width: 0%;
+}
+.button {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.btn-hover-effect {
+  color: rgba(0, 0, 0, 0.767);
+  font-size: 30px;
+  border: 2px groove rgb(231, 15, 15);
+  background: #1ebb33ec;
+  padding: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.btn-hover-effect:hover {
+  color:beige;
+  animation-name: play-effect;
+  animation-duration: 0.4s;
+  animation-iteration-count: 2;
+}

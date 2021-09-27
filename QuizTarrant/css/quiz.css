@@ -1,0 +1,61 @@
+.choice-prefix {
+  color: aliceblue;
+  padding: 10px 0;
+  background-color: blue;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.choice-text {
+  text-align: center;
+  vertical-align: middle;
+  border: 2px solid red;
+}
+
+.button {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.btn-hover-effect {
+  color: rgba(255, 255, 255, 0.767);
+  font-size: 30px;
+  border: 2px groove rgb(231, 15, 15);
+  background: #c90165d8;
+  padding: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease; 
+}
+
+.btn-hover-effect:hover {
+  color: #070707;
+  animation-name: play-effect;
+  animation-duration: 0.4s;
+  animation-iteration-count: 2;
+}  
+
+.correct {
+  background-color: #28a745;
+}
+
+.incorrect {
+  background-color: #dc3545;
+}
+
+#progressBar {
+  width: 15rem;
+  height: 15px;
+  border-radius: 8px;
+}
+
+#progressBarFull {
+  height: 15px;
+  background-color: #2d89da;
+  border-radius: 8px;
+  width: 0%;
+}

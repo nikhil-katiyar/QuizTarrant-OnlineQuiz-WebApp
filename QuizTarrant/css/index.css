@@ -1,0 +1,44 @@
+.bg-info{
+  background-color: rgb(94, 6, 6);
+}
+
+/* .container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.index-main {
+  display: flex;
+  justify-content: center;
+}
+
+.index-header {
+  margin: 100px auto;
+  text-align: center;
+}
+
+.button {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.btn-hover-effect {
+  color: rgb(0, 0, 0);
+  font-size: 2.5rem;
+  border: 1px groove rgba(255, 255, 255, 0.822);
+  background: #b801c9;
+  margin: 0 auto;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.btn-hover-effect:hover {
+  color: #00c3ff;
+  animation-name: play-effect;
+  animation-duration: 0.4s;
+  animation-iteration-count: 2;
+}
