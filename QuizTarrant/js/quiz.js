@@ -4,20 +4,174 @@ let question_no = document.getElementById("ques-no");
 let scoreText = document.getElementById("score");
 let progressBar = document.getElementById("progressBarFull");
 const end = document.querySelector("#submit-btn");
+// const start = document.getElementById('start');
 
+// console.log(start);
+// start.addEventListener("click",function(){
+//   start.setAttribute('href',"#")
+// })
+
+let subject;
+let diff;
+let number;
+
+const subjects = [
+  "GN",
+  "films",
+  "music",
+  "tele",
+  "games",
+  "science",
+  "computers",
+  "maths",
+  "sports",
+  "geography",
+  "history",
+  "politics",
+  "celebs",
+  "animals",
+  "vehicles",
+  "CA",
+];
+const links = [
+  [
+    //Index 0 = "GN"
+    "https://opentdb.com/api.php?amount=50&category=9&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=9&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=9&difficulty=hard&type=multiple",
+  ],
+  [
+    //Index 1 = "films"
+    "https://opentdb.com/api.php?amount=50&category=11&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=11&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=11&difficulty=hard&type=multiple",
+  ],
+  [
+    //Index 2 = "music"
+    "https://opentdb.com/api.php?amount=50&category=12&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=12&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=12&difficulty=hard&type=multiple",
+  ],
+  [
+    //Index 3 = "tele"
+    "https://opentdb.com/api.php?amount=50&category=14&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=14&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=14&difficulty=hard&type=multiple",
+  ],
+  [
+    //Index 4 = "games"
+    "https://opentdb.com/api.php?amount=50&category=15&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=15&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=15&difficulty=hard&type=multiple",
+  ],
+  [
+    //Index 5 = "science"
+    "https://opentdb.com/api.php?amount=50&category=17&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=17&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=17&difficulty=hard&type=multiple",
+  ],
+  [
+    //Index 6 = "computers"
+    "https://opentdb.com/api.php?amount=50&category=18&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=18&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=18&difficulty=hard&type=multiple",
+  ],
+  [
+    //Index 7 = "maths"
+    "https://opentdb.com/api.php?amount=50&category=19&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=19&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=19&difficulty=hard&type=multiple",
+  ],
+  [
+    //Index 8 =   "sports"
+    "https://opentdb.com/api.php?amount=50&category=21&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=21&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=21&difficulty=hard&type=multiple",
+  ],
+  [
+    //Index 9 = "geography"
+    "https://opentdb.com/api.php?amount=50&category=22&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=22&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=22&difficulty=hard&type=multiple",
+  ],
+  [
+    //Index 10 = "history"
+    "https://opentdb.com/api.php?amount=50&category=23&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=23&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=23&difficulty=hard&type=multiple",
+  ],
+  [
+    //Index 11 = "politics"
+    "https://opentdb.com/api.php?amount=50&category=24&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=24&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=24&difficulty=hard&type=multiple",
+  ],
+  [
+    //Index 12 = "celebs"
+    "https://opentdb.com/api.php?amount=50&category=26&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=26&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=26&difficulty=hard&type=multiple",
+  ],
+  [
+    //Index 13 = "animals"
+    "https://opentdb.com/api.php?amount=50&category=27&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=27&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=27&difficulty=hard&type=multiple",
+  ],
+  [
+    //Index 14 = "vehicles"
+    "https://opentdb.com/api.php?amount=50&category=28&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=28&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=28&difficulty=hard&type=multiple",
+  ],
+  [
+    //Index 15 = "CA"
+    "https://opentdb.com/api.php?amount=50&category=32&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=32&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=50&category=32&difficulty=hard&type=multiple",
+  ],
+];
+
+let locallist = window.localStorage.getItem("formCategory");
+if (locallist) {
+  subject = JSON.parse(locallist);
+}
+
+locallist = window.localStorage.getItem("formDifficulty");
+if (locallist) {
+  diff = JSON.parse(locallist);
+}
+
+locallist = window.localStorage.getItem("formNumber");
+if (locallist) {
+  number = JSON.parse(locallist);
+}
+
+// console.log(typeof subject,number);
 let curr_ques = {};
 let acceptingAnswers = false;
 let score = 0;
 let ques_count = 0;
 let available_ques = [];
-
 let questions = [];
 
-//Fetching Questions from Api Database Link 
+const CORRECT_BONUS = 5;
+let MAX_QUESTIONS = number;
+
+let index;
+
+for (let i = 0; i < subjects.length; i++) {
+  if (subjects[i] === subject) {
+    index = i;
+    break;
+  }
+}
+
+//Fetching Questions from Api Database Link
 //fetch returns a promise and then .json() method converts its body to json file
 //then this returned json of questions is stored in loadedQuestions variable
 //then we assign the questions array to loadedQuestions and start the game
-fetch("https://opentdb.com/api.php?amount=10&category=9&difficulty=easy")
+fetch(links[index][diff - 1])
   .then((res) => {
     // console.log(res);
     return res.json();
@@ -52,9 +206,6 @@ fetch("https://opentdb.com/api.php?amount=10&category=9&difficulty=easy")
   .catch((err) => {
     console.error(err);
   });
-
-const CORRECT_BONUS = 5;
-let MAX_QUESTIONS = 3;
 
 end.addEventListener("click", function () {
   end.setAttribute("href", "../QuizTarrant/end.html");
@@ -97,7 +248,7 @@ const getNewQuestion = () => {
   acceptingAnswers = true;
 };
 
-incrementScore = (num) => {
+let incrementScore = (num) => {
   score += num;
   scoreText.innerText = score;
 };
@@ -130,3 +281,5 @@ choices.forEach((choice) => {
     }, 1000);
   });
 });
+
+localStorage.clear();
