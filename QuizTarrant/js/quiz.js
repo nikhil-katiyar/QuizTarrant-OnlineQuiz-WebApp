@@ -147,6 +147,8 @@ if (locallist) {
   number = JSON.parse(locallist);
 }
 
+localStorage.clear();
+
 // console.log(typeof subject,number);
 let curr_ques = {};
 let acceptingAnswers = false;
@@ -208,6 +210,9 @@ fetch(links[index][diff - 1])
   });
 
 end.addEventListener("click", function () {
+  window.localStorage.setItem("score", JSON.stringify(score));
+  let percent = (score / (MAX_QUESTIONS * 5)) * 100;
+  window.localStorage.setItem("percentage", JSON.stringify(percent));
   end.setAttribute("href", "../QuizTarrant/end.html");
 });
 
@@ -221,6 +226,9 @@ const startGame = () => {
 const getNewQuestion = () => {
   if (available_ques.length === 0 || ques_count >= MAX_QUESTIONS) {
     //go to the end page
+    window.localStorage.setItem("score", JSON.stringify(score));
+    let percent = (score / (MAX_QUESTIONS * 5)) * 100;
+    window.localStorage.setItem("percentage", JSON.stringify(percent));
     return window.location.assign("../QuizTarrant/end.html");
   }
   ques_count++;
@@ -235,7 +243,7 @@ const getNewQuestion = () => {
   curr_ques = available_ques[q_no];
 
   //Displaying selected question to the question text
-  quesText.innerText = curr_ques.question;
+  quesText.innerHTML = `${curr_ques.question}`;
 
   //Displaying choices text to every choice number using data-* attribute
   choices.forEach((choice) => {
@@ -281,5 +289,3 @@ choices.forEach((choice) => {
     }, 1000);
   });
 });
-
-localStorage.clear();
