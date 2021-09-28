@@ -1,3 +1,42 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --main-background: #aad7f0;
+  --ques-color: #fcd3c7;
+  --logo-color: #5078de;
+  --logo2-color: #e3448e;
+  --color1: #ffcce9;
+  --color2:rgb(228, 228, 228);
+}
+
+.image {
+  width: 10%;
+}
+
+.logo {
+  justify-content: center;
+  /* justify-content: space-between; */
+  /* vertical-align: middle; */
+}
+#logo-text {
+  /* font-family: 'Lora', serif; */
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-size: 5rem;
+  color: var(--logo-color);
+}
+#logo2 {
+  color: var(--logo2-color);
+}
+
+#display{
+  background-color: var(--ques-color);
+}
+
 .choice-prefix {
   color: aliceblue;
   padding: 10px 0;
@@ -12,6 +51,7 @@
 
 .choice-text {
   /* text-align: center; */
+  background-color: var(--color2);
   border: 2px solid red;
   border-left : none;
 }

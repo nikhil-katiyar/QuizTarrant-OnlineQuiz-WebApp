@@ -2,9 +2,6 @@
 * {
   font-family: "Montserrat", sans-serif;
 }
-.bg-info {
-  background-color: rgb(94, 6, 6);
-}
 
 :root {
   --main-background: #aad7f0;
@@ -12,6 +9,7 @@
   --logo-color: #5078de;
   --logo2-color: #e3448e;
   --color1: #ffcce9;
+  
 }
 
 .image {
