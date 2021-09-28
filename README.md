@@ -7,9 +7,11 @@ Trivia API is used in the project to fetch the questions from their database bas
 ## Home Page
 <br/>
 <br/>
+
 ![Screenshot (553)](https://user-images.githubusercontent.com/56537415/135166587-ff549a0b-e85a-42f2-9f37-fb4571b4bb1a.png)
 ![Screenshot (552)](https://user-images.githubusercontent.com/56537415/135166590-d926fb30-1797-4d70-ac65-2d6558993570.png)
 ![Screenshot (554)](https://user-images.githubusercontent.com/56537415/135166592-54dedd97-7788-4898-b916-930163169ed9.png)
+
 <br/>
 <br/>
 
