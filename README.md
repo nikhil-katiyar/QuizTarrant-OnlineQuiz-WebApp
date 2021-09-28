@@ -14,24 +14,31 @@ Trivia API is used in the project to fetch the questions from their database bas
 <br/>
 
 ## Quiz Page
+
 <br/>
 
 ![Screenshot (555)](https://user-images.githubusercontent.com/56537415/135166644-8763b2bf-c8b5-44ce-8772-4c20175807da.png)
 
 <br/>
+
 ### On giving Wrong Answer
+
 <br/>
 
 ![Screenshot (556)](https://user-images.githubusercontent.com/56537415/135166723-de03e979-aab1-4b38-a02a-fa213512b81d.png)
 
 <br/>
+
 ### On giving Right Answer
+
 <br/>
 
 ![Screenshot (557)](https://user-images.githubusercontent.com/56537415/135166685-1317d074-36a0-446b-a4fb-a98169e7f55c.png)
 
 <br/>
+
 ## End Page (Results Page)
+
 <br/>
 
 ![Screenshot (558)](https://user-images.githubusercontent.com/56537415/135166775-8b7df110-3f28-4c9e-aab5-b81327a19a65.png)
