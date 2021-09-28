@@ -13,15 +13,12 @@
       crossorigin="anonymous"
     />
   </head>
-  <body class="bg bg-var(--color2)">
+  <body>
     <!-- <header>
       <div class="container">
         <div class="row mb-3">
           <h1 class="col-12 d-flex justify-content-center">QuizTarrant</h1>
-          <h2 class="col-12 d-flex justify-content-center">
-            Score:
-            <span id="score"> 0 </span>
-          </h2>
+          
         </div>
       </div>
     </header> -->
@@ -42,10 +39,14 @@
     <main>
       <div id="display" class="container p-5 pt-3">
         <div class="mb-5">
-          <p class="col-2">Question<span class="col 2" id="ques-no"> 1/3 </span></p>
-          <div class="mb-3 bg-dark" id="progressBar">
-            <div id="progressBarFull"></div>
-          </div>
+            <p><span id="ques-ques">Question</span><span id="ques-no"></span></p>
+            <div class="mb-3 bg-dark" id="progressBar">
+              <div id="progressBarFull"></div>
+            </div>
+            <span>
+              Score:
+              <span id="score"> 0 </span>
+            </span>          
           <h2 class="d-flex justify-content-center col-12" id="question"></h2>
         </div>
         <div class="row choice-container mb-3 offset-2">

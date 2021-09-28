@@ -1,3 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --main-background: #aad7f0;
+  --ques-color: #ede8d3;
+  --logo-color: #5078de;
+  --logo2-color: #e3448e;
+  --color1: #ffcce9;
+}
+
+.image {
+  width: 10%;
+}
+section {
+  background-color: var(--color1);
+}
+
+.logo {
+  justify-content: center;
+  /* justify-content: space-between; */
+  /* vertical-align: middle; */
+}
+#logo-text {
+  /* font-family: 'Lora', serif; */
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-size: 5rem;
+  color: var(--logo-color);
+}
+#logo2 {
+  color: var(--logo2-color);
+}
+
+#congrats {
+  font-size: 3rem;
+  color: #ff1481;
+}
+
+#completed {
+  font-size: 2rem;
+  color: #d31098;
+}
+
+#final-score-text {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 700;
+}
+
+#percent-text {
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#final-score,
+#percentText {
+  color: #2d89da;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+#image {
+  width: 15%;
+}
+
 #progressBar {
   height: 20px;
   border-radius: 10px;
@@ -7,7 +76,7 @@
   height: 20px;
   background-color: #2d89da;
   border-radius: 10px;
-  width: 50%;
+  width: 0%;
 }
 .button {
   text-align: center;

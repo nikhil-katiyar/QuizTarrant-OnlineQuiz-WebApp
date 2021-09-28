@@ -14,32 +14,54 @@
     />
   </head>
   <body>
-    <header>
+     <header class="bg-dark text-light text-center p-5 pb-4 mb-3 index-header">
       <div class="container">
-        <div class="row">
-          <h1 class="col-12 d-flex justify-content-center">
-            Congratulations!!
-          </h1>
-          <h2 class="col-12 d-flex justify-content-center">
-            You have completed the Quiz
-          </h2>
+        <div class="d-sm-flex flex-row logo">
+          <div class="offset-sm-">
+            <h1 id="logo-text"">Quiz<span id = "logo2">Tarrant</span></h1>
+          </div>
+          <img
+            class="img-fluid image offset-1"
+            src="https://st2.depositphotos.com/16030310/43120/v/600/depositphotos_431206294-stock-illustration-letter-logo-colorful-geometric-shape.jpg"
+          />
         </div>
       </div>
     </header>
 
+
+    <section class="mb-3">
+      <div class="container d-flex justify-content-center">
+        <div class="row ">
+          <div>
+          <h1 id ="congrats" class="col-12 offset-sm-1">
+            Congratulations!!
+          </h1>
+          <img id = "image" class="img-fluid offset-sm-5" src ="https://cdn-icons-png.flaticon.com/512/864/864837.png">
+          <h2 id = "completed" class="col-12 d-flex justify-content-center">
+            You have completed the Quiz
+          </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <main>
       <div class="container">
         <div class="row">
-          <h3 class="col-12 d-flex justify-content-center">Final Score</h3>
-          <h4
-            class="col-12 d-flex justify-content-center"
+          <div class="col-12 text-center p-2">
+          <span id="final-score-text">Final Score</span>
+          <span
             id="final-score"
-          ></h4>
-          <h3 class="col-12 d-flex justify-content-center">Percentage</h3>
-          <h4
-            class="col-12 d-flex justify-content-center"
+          ></span>
+          </div>
+          <div class="col-12 text-center p-2">
+          <span id="percent-text">Percentage</span>
+          <span
             id="percentText"
-          ></h4>
+          ></span>
+          </div>
+          
         </div>
       </div>
       <div class="bg-dark col-6 offset-3" id="progressBar">

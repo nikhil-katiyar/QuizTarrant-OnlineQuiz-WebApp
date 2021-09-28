@@ -233,7 +233,7 @@ const getNewQuestion = () => {
   }
   ques_count++;
   //Update question number
-  question_no.innerText = `${ques_count}/${MAX_QUESTIONS}`;
+  question_no.innerText = `  ${ques_count}/${MAX_QUESTIONS}`;
 
   //Update the progress bar
   progressBar.style.width = `${(ques_count / MAX_QUESTIONS) * 100}%`;
@@ -258,7 +258,7 @@ const getNewQuestion = () => {
 
 let incrementScore = (num) => {
   score += num;
-  scoreText.innerText = score;
+  scoreText.innerText = `  ${score}`;
 };
 
 choices.forEach((choice) => {

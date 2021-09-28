@@ -37,6 +37,24 @@
   background-color: var(--ques-color);
 }
 
+#ques-no{
+  color: #2d89da;
+  font-size: 40px;
+  font-weight: 900;
+}
+#score{
+  color: #2d89da;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#ques-ques{
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+
+
 .choice-prefix {
   color: aliceblue;
   padding: 10px 0;
