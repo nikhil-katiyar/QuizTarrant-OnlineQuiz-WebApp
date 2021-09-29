@@ -36,99 +36,99 @@ const subjects = [
 const links = [
   [
     //Index 0 = "GN"
-    "https://opentdb.com/api.php?amount=50&category=9&difficulty=easy&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=9&difficulty=medium&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=9&difficulty=hard&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=9&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=9&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=9&difficulty=hard&type=multiple",
   ],
   [
     //Index 1 = "films"
-    "https://opentdb.com/api.php?amount=50&category=11&difficulty=easy&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=11&difficulty=medium&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=11&difficulty=hard&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=11&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=11&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=11&difficulty=hard&type=multiple",
   ],
   [
     //Index 2 = "music"
-    "https://opentdb.com/api.php?amount=50&category=12&difficulty=easy&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=12&difficulty=medium&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=12&difficulty=hard&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=12&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=12&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=12&difficulty=hard&type=multiple",
   ],
   [
     //Index 3 = "tele"
-    "https://opentdb.com/api.php?amount=50&category=14&difficulty=easy&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=14&difficulty=medium&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=14&difficulty=hard&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=14&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=14&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=14&difficulty=hard&type=multiple",
   ],
   [
     //Index 4 = "games"
-    "https://opentdb.com/api.php?amount=50&category=15&difficulty=easy&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=15&difficulty=medium&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=15&difficulty=hard&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=15&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=15&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=15&difficulty=hard&type=multiple",
   ],
   [
     //Index 5 = "science"
-    "https://opentdb.com/api.php?amount=50&category=17&difficulty=easy&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=17&difficulty=medium&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=17&difficulty=hard&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=17&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=17&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=17&difficulty=hard&type=multiple",
   ],
   [
     //Index 6 = "computers"
-    "https://opentdb.com/api.php?amount=50&category=18&difficulty=easy&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=18&difficulty=medium&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=18&difficulty=hard&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=18&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=18&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=18&difficulty=hard&type=multiple",
   ],
   [
     //Index 7 = "maths"
-    "https://opentdb.com/api.php?amount=50&category=19&difficulty=easy&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=19&difficulty=medium&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=19&difficulty=hard&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=19&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=19&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=19&difficulty=hard&type=multiple",
   ],
   [
     //Index 8 =   "sports"
-    "https://opentdb.com/api.php?amount=50&category=21&difficulty=easy&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=21&difficulty=medium&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=21&difficulty=hard&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=21&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=21&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=21&difficulty=hard&type=multiple",
   ],
   [
     //Index 9 = "geography"
-    "https://opentdb.com/api.php?amount=50&category=22&difficulty=easy&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=22&difficulty=medium&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=22&difficulty=hard&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=22&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=22&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=22&difficulty=hard&type=multiple",
   ],
   [
     //Index 10 = "history"
-    "https://opentdb.com/api.php?amount=50&category=23&difficulty=easy&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=23&difficulty=medium&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=23&difficulty=hard&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=23&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=23&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=23&difficulty=hard&type=multiple",
   ],
   [
     //Index 11 = "politics"
-    "https://opentdb.com/api.php?amount=50&category=24&difficulty=easy&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=24&difficulty=medium&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=24&difficulty=hard&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=24&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=24&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=24&difficulty=hard&type=multiple",
   ],
   [
     //Index 12 = "celebs"
-    "https://opentdb.com/api.php?amount=50&category=26&difficulty=easy&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=26&difficulty=medium&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=26&difficulty=hard&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=26&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=26&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=26&difficulty=hard&type=multiple",
   ],
   [
     //Index 13 = "animals"
-    "https://opentdb.com/api.php?amount=50&category=27&difficulty=easy&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=27&difficulty=medium&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=27&difficulty=hard&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=27&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=27&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=27&difficulty=hard&type=multiple",
   ],
   [
     //Index 14 = "vehicles"
-    "https://opentdb.com/api.php?amount=50&category=28&difficulty=easy&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=28&difficulty=medium&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=28&difficulty=hard&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=28&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=28&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=28&difficulty=hard&type=multiple",
   ],
   [
     //Index 15 = "CA"
-    "https://opentdb.com/api.php?amount=50&category=32&difficulty=easy&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=32&difficulty=medium&type=multiple",
-    "https://opentdb.com/api.php?amount=50&category=32&difficulty=hard&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=32&difficulty=easy&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=32&difficulty=medium&type=multiple",
+    "https://opentdb.com/api.php?amount=30&category=32&difficulty=hard&type=multiple",
   ],
 ];
 
